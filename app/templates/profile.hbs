@@ -3,13 +3,16 @@
 <aside class='profile-aside__container'>
   <div class='profile-aside__search-container'></div>
   <ul class='profile-aside__list-container'>
-    {{#each model as |profile|}}
-      <li>
-        {{#link-to 'profile.detail' profile}}
-          {{profile.name}}
-          {{profile.description}}
-        {{/link-to}}
-      </li>
+    {{#each model as |types|}}
+      <div>{{types.type}}</div>
+      {{#each types.data as |profile|}}
+        <li>
+          {{#link-to 'profile.detail' profile}}
+            {{profile.name}}
+            {{profile.description}}
+          {{/link-to}}
+        </li>
+      {{/each}}
     {{/each}}
   </ul>
 </aside>
