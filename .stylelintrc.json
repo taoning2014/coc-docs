@@ -1,0 +1,28 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "scss/at-mixin-argumentless-call-parentheses": "always",
+    "scss/at-mixin-pattern": [
+      "^.((([a-z0-9]+-)*[a-z0-9]+(--([a-z0-9]+-)*[a-z0-9]+)?(__([a-z0-9]+-)*[a-z0-9]+)?)|(([a-z0-9]+-)*[a-z0-9]+(__([a-z0-9]+-)*[a-z0-9]+(--([a-z0-9]+-)*[a-z0-9]+)?)?))$",
+      {
+        "message": "Please use kebab or BEM case for mixin names."
+      }
+    ],
+    "scss/at-function-pattern": [
+      "^.((([a-z0-9]+-)*[a-z0-9]+(--([a-z0-9]+-)*[a-z0-9]+)?(__([a-z0-9]+-)*[a-z0-9]+)?)|(([a-z0-9]+-)*[a-z0-9]+(__([a-z0-9]+-)*[a-z0-9]+(--([a-z0-9]+-)*[a-z0-9]+)?)?))$",
+      {
+        "message": "Please use kebab or BEM case for at-function names."
+      }
+    ],
+    "scss/dollar-variable-pattern": [
+      "^.((([a-z0-9]+-)*[a-z0-9]+(--([a-z0-9]+-)*[a-z0-9]+)?(__([a-z0-9]+-)*[a-z0-9]+)?)|(([a-z0-9]+-)*[a-z0-9]+(__([a-z0-9]+-)*[a-z0-9]+(--([a-z0-9]+-)*[a-z0-9]+)?)?))$",
+      {
+        "message": "Please use kebab or BEM case for variable names."
+      }
+    ],
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/operator-no-unspaced": true
+  },
+  "ignoreFiles": ["**/_styles.scss"]
+}
