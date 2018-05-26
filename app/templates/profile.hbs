@@ -1,0 +1,16 @@
+<h1>here is profile route</h1>
+
+<aside class='profile-aside__container'>
+  <div class='profile-aside__search-container'></div>
+  <ul class='profile-aside__list-container'>
+    {{#each model as |profile|}}
+      <li>
+        {{#link-to 'profile.detail' profile}}
+          {{profile.name}}
+          {{profile.description}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+</aside>
+{{outlet}}
