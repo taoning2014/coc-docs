@@ -1,19 +1,18 @@
-<h1>here is profile route</h1>
-
-<aside class='profile-aside__container'>
-  <div class='profile-aside__search-container'></div>
-  <ul class='profile-aside__list-container'>
-    {{#each model as |types|}}
-      <div>{{types.type}}</div>
+<div class="container layout-row">
+  <aside class='profile-aside__container flex-none'>
+    <div class='profile-aside__search-container'></div>
+    <ul class='profile-aside__list-container'>
+      {{#each model as |types|}}
+      <div>Type: {{types.type}}</div>
       {{#each types.data as |profile|}}
-        <li>
-          {{#link-to 'profile.detail' profile}}
-            {{profile.name}}
-            {{profile.description}}
-          {{/link-to}}
-        </li>
-      {{/each}}
-    {{/each}}
-  </ul>
-</aside>
-{{outlet}}
+      <li>
+        {{#link-to 'profile.detail' profile}} {{profile.name}} {{profile.description}} {{/link-to}}
+      </li>
+      {{/each}} {{/each}}
+    </ul>
+  </aside>
+
+  <main class="profile-main__container flex">
+    {{outlet}}
+  </main>
+</div>

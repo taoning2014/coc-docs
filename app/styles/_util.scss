@@ -1,0 +1,16 @@
+.container {
+  height: 100vh;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: black;
+  }
+}
