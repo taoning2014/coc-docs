@@ -11,5 +11,11 @@
         {{/each-in}}
       </div>
     </div>
+    {{paper-divider}}
+    <div class="profile-main__content-container layout-column">
+      {{#each model.data as |tableData|}}
+        {{data-table data=tableData key=name}}
+      {{/each}}
+    </div>
   {{/card.content}}
 {{/paper-card}}

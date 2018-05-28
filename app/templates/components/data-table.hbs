@@ -1,0 +1,16 @@
+{{#paper-data-table as |table|}}
+  {{#table.head as |head|}}
+    {{#each header as |title|}}
+      {{#head.column}}{{title}}{{/head.column}}
+    {{/each}}
+  {{/table.head}}
+  {{#table.body as |body|}}
+    {{#each content as |contentRow|}}
+      {{#body.row as |row|}}
+        {{#each contentRow as |column|}}
+          {{#row.cell}}{{column}}{{/row.cell}}
+        {{/each}}
+      {{/body.row}}
+    {{/each}}
+  {{/table.body}}
+{{/paper-data-table}}
