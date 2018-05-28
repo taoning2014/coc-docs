@@ -11,12 +11,12 @@ export default Component.extend({
 
   didReceiveAttrs() {
     this._super(...arguments);
-    const key = this.get('key');
+    const name = this.get('name');
     const data = this.get('data');
 
     this.setProperties({
-      header: this.get('extracData').getHeader(key, data),
-      content: this.get('extracData').getContent(key, data),
+      header: this.get('extracData').getHeader(name, data),
+      content: this.get('extracData').getContent(name, data),
     });
   },
 });

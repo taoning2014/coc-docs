@@ -14,7 +14,7 @@
     {{paper-divider}}
     <div class="profile-main__content-container layout-column">
       {{#each model.data as |tableData|}}
-        {{data-table data=tableData key=name}}
+        {{data-table data=tableData name=name}}
       {{/each}}
     </div>
   {{/card.content}}
