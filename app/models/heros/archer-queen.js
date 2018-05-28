@@ -1,5 +1,9 @@
 export const archerQueen = {
   name: '弓箭女王',
+  profileImage: {
+    src: '/assets/images/heros/弓箭女王.png',
+    alt: '弓箭女王',
+  },
   description:
     '铁拳出击：能大量恢复生命值，短暂提高自己和周围野蛮人的速度和攻击力。皇室披风技能说明：女皇隐身，回复一定生命值并连续发射大量毁灭性、高伤害弓箭。防御工事无法瞄准她，同时一群弓箭手会出现分散防御工事的打击！',
   data: [

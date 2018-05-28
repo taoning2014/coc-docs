@@ -1,3 +1,9 @@
-<h2>In detail page</h2>
-
-{{model.name}}
+{{#paper-card as |card|}}
+  {{#card.content class="profile-main__card-container"}}
+    <div class="profile-main__header-container">
+      <img src={{model.profileImage.src}} alt={{model.profileImage.alt}}>
+      <p>{{model.name}}</p>
+      <p>{{model.description}}</p>
+    </div>
+  {{/card.content}}
+{{/paper-card}}

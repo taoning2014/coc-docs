@@ -4,11 +4,14 @@
     <ul class='profile-aside__list-container'>
       {{#each model as |types|}}
       <div>Type: {{types.type}}</div>
-      {{#each types.data as |profile|}}
-      <li>
-        {{#link-to 'profile.detail' profile}} {{profile.name}} {{profile.description}} {{/link-to}}
-      </li>
-      {{/each}} {{/each}}
+        {{#each types.data as |profile|}}
+        <li>
+          {{#link-to 'profile.detail' types.type profile.name}}
+            {{profile.name}}
+          {{/link-to}}
+        </li>
+        {{/each}}
+      {{/each}}
     </ul>
   </aside>
 

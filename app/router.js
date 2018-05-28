@@ -6,9 +6,9 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
-  this.route("profile", function() {
-    this.route("detail", { path: "/:name/detail" });
+Router.map(function () {
+  this.route("profile", function () {
+    this.route("detail", { path: "/:type/:name/detail" });
   });
 });
 

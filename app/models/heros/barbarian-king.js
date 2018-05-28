@@ -1,5 +1,9 @@
 export const barbarianKing = {
   name: '野蛮人之王',
+  profileImage: {
+    src: '/assets/images/heros/野蛮人之王.png',
+    alt: '野蛮人之王',
+  },
   description:
     '铁拳出击：能大量恢复生命值，短暂提高自己和周围野蛮人的速度和攻击力。',
   data: [
