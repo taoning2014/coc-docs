@@ -1,9 +1,15 @@
 {{#paper-card as |card|}}
   {{#card.content class="profile-main__card-container"}}
-    <div class="profile-main__header-container">
-      <img src={{model.profile.image.src}} alt={{model.profile.image.alt}}>
-      <p>{{model.name}}</p>
-      <p>{{model.description}}</p>
+    <div class="profile-main__header-container layout-row">
+      <div class="profile-main__profile-image-container flex-30">
+        <img class="profile-main__profile-image" src={{model.profile.image.src}} alt={{model.profile.image.alt}}>
+      </div>
+      <div class="profile-main_profile-description-container flex">
+        <h2>{{model.name}}</h2>
+        {{#each-in model.profile.info as |name desc|}}
+          <p>{{name}}: {{desc}}</p>
+        {{/each-in}}
+      </div>
     </div>
   {{/card.content}}
 {{/paper-card}}
