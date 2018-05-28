@@ -1,20 +1,19 @@
 export const barbarianKing = {
   name: '野蛮人之王',
-  profileImage: {
-    src: '/assets/images/heros/野蛮人之王.png',
-    alt: '野蛮人之王',
+  profile: {
+    image: { src: '/assets/images/heros/野蛮人之王.png', alt: '野蛮人之王' },
+    技能名称: '铁拳出击',
+    有效时间: '10秒',
+    有效半径: '2.5格',
+    召唤兵种: '野蛮人',
+    初始国王等级: '5',
+    技能类型: '狂暴（速度伤害提升）',
+    技能描述:
+      '铁拳出击：能大量恢复生命值，短暂提高自己和周围野蛮人的速度和攻击力。',
   },
   description:
-    '铁拳出击：能大量恢复生命值，短暂提高自己和周围野蛮人的速度和攻击力。',
+    'This colossal menace soaks up huge amounts of damage and bashes anything in his path. He guards his territory fiercely when defending, and can launch into a devastating rage when attacking once his Iron Fist ability is unlocked!',
   data: [
-    {
-      技能名称: '铁拳出击',
-      有效时间: '10秒',
-      有效半径: '2.5格',
-      召唤兵种: '野蛮人',
-      初始国王等级: '5',
-      技能类型: '狂暴（速度伤害提升）',
-    },
     {
       技能等级: [1, 2, 3, 4, 5, 6, 7, 8],
       要求国王等级: [5, 10, 15, 20, 25, 30, 35, 40],
