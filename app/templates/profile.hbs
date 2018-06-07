@@ -1,18 +1,32 @@
 <div class="container layout-row">
   <aside class='profile-aside__container flex-none'>
     <div class='profile-aside__search-container'></div>
-    <ul class='profile-aside__list-container'>
-      {{#each model as |types|}}
-      <div>Type: {{types.type}}</div>
-        {{#each types.data as |profile|}}
-        <li>
-          {{#link-to 'profile.detail' types.type profile.name}}
-            {{profile.name}}
-          {{/link-to}}
-        </li>
+    <div class='profile-aside__list-container'>
+        {{#each model as |types|}}
+          {{#paper-expansion-panel class='profile-aside__paper-expansion-panel' as |panel|}}
+            {{#panel.collapsed}}
+              <div class="md-panel-title">{{types.typeName}}</div>
+              {{paper-icon "keyboard_arrow_down"}}
+            {{/panel.collapsed}}
+            {{#panel.expanded as |expanded|}}
+              {{#expanded.header}}
+                <div class="md-panel-title">{{types.typeName}}</div>
+                {{paper-icon "keyboard_arrow_up"}}
+              {{/expanded.header}}
+              {{#expanded.content}}
+                <ul>
+                  {{#each types.data as |profile|}}
+                    <li>{{#link-to 'profile.detail' types.type profile.name}} {{profile.name}} {{/link-to}}</li>
+                  {{/each}}
+                </ul>
+              {{/expanded.content}}
+            {{/panel.expanded}}
+          {{/paper-expansion-panel}}
         {{/each}}
-      {{/each}}
-    </ul>
+    </div>
+    <div class='profile-aside__button-container'>
+      {{link-to 'BACK TO HOME' 'profile'}}
+    </div>
   </aside>
 
   <main class="profile-main__container flex">

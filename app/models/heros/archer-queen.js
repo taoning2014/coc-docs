@@ -16,6 +16,16 @@ export const archerQueen = {
     'This graceful huntress is a master of destructive force, though modest in health. She snipes targets in her territory when defending, and can summon stealth and terrifying damage when attacking once her Royal Cloak ability is unlocked!',
   data: [
     {
+      优先攻击目标: '无',
+      攻击类型: '远程地面和空中',
+      移动速度: '24',
+      攻击速度: '0.75s',
+      攻击距离: '3 格',
+      警戒半径: '13 格',
+      巡逻半径: '3 格',
+      所需大本营等级: 9,
+    },
+    {
       技能等级: [1, 2, 3, 4, 5, 6, 7, 8],
       要求女皇等级: [5, 10, 15, 20, 25, 30, 35, 40],
       持续时间: [
@@ -32,16 +42,6 @@ export const archerQueen = {
       恢复体力: [150, 175, 200, 225, 250, 275, 300, 325],
       伤害提升: [300, 355, 416, 483, 557, 638, 725, 819],
       所需大本营等级: [9, 9, 9, 9, 9, 9, 10, 10],
-    },
-    {
-      优先攻击目标: '无',
-      攻击类型: '远程地面和空中',
-      移动速度: '24',
-      攻击速度: '0.75s',
-      攻击距离: '3 格',
-      警戒半径: '13 格',
-      巡逻半径: '3 格',
-      所需大本营等级: 9,
     },
     {
       等级: [

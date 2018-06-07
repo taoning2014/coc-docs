@@ -1,4 +1,20 @@
 .profile-aside__container {
+  position: fixed;
+  height: 100%;
   width: 330px;
-  background-color: aquamarine;
+  background-color: #616161;
+}
+
+.profile-aside__paper-expansion-panel.md-open {
+  border-radius: 0;
+}
+
+.profile-aside__button-container {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+
+  a {
+    color: #fafafa;
+  }
 }

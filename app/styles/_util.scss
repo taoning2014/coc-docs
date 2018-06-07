@@ -5,13 +5,20 @@
 ol,
 ul {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #757575;
 
   &:visited {
-    color: black;
+    color: #757575;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: #212121;
   }
 }

@@ -17,6 +17,14 @@ export const barbarianKing = {
     'This colossal menace soaks up huge amounts of damage and bashes anything in his path. He guards his territory fiercely when defending, and can launch into a devastating rage when attacking once his Iron Fist ability is unlocked!',
   data: [
     {
+      优先攻击目标: '无',
+      攻击类型: '地面',
+      移动速度: '16',
+      攻击速度: '1.2s',
+      攻击距离: '3 格',
+      警戒半径: '12 格',
+    },
+    {
       技能等级: [1, 2, 3, 4, 5, 6, 7, 8],
       要求国王等级: [5, 10, 15, 20, 25, 30, 35, 40],
       增加速度: [18, 19, 20, 21, 22, 23, 24, 25],
@@ -24,14 +32,6 @@ export const barbarianKing = {
       召唤数量: [6, 8, 10, 12, 14, 16, 18, 20],
       恢复体力: [500, 620, 752, 899, 1063, 1247, 1455, 1692],
       所需大本营等级: [7, 8, 9, 9, 9, 9, 10, 10],
-    },
-    {
-      优先攻击目标: '无',
-      攻击类型: '地面',
-      移动速度: '16',
-      攻击速度: '1.2s',
-      攻击距离: '3 格',
-      警戒半径: '12 格',
     },
     {
       等级: [
