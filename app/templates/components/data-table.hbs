@@ -8,7 +8,13 @@
     {{#each content as |contentRow|}}
       {{#body.row as |row|}}
         {{#each contentRow as |column|}}
-          {{#row.cell}}{{column}}{{/row.cell}}
+          {{#row.cell}}
+            {{#if column.type}}
+              <img src={{column.url}} alt={{column.alt}}>
+            {{else}}
+              {{column}}
+            {{/if}}
+          {{/row.cell}}
         {{/each}}
       {{/body.row}}
     {{/each}}
