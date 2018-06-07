@@ -6,14 +6,16 @@ export const wizardTower = {
       描述:
         'The Wizard Tower is a spiraling, cone-shaped tower of crystalline rock that has a Wizard on the top of it. It is capable of inflicting powerful splash damage to both Ground and Air Units, though it is limited to a relatively short range.',
     },
+    infoTable: {
+      content: [
+        ['大本营等级', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        ['可建造数量上限', 0, 0, 0, 0, 1, 2, 2, 3, 4, 4, 5],
+      ],
+    },
   },
   description:
     'The Wizard Tower is a spiraling, cone-shaped tower of crystalline rock that has a Wizard on the top of it. It is capable of inflicting powerful splash damage to both Ground and Air Units, though it is limited to a relatively short range.',
   data: [
-    {
-      大本营等级: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-      加农炮可建造数量上限: [0, 0, 0, 0, 1, 2, 2, 3, 4, 4, 5],
-    },
     {
       射程: '7',
       攻击速度: '1.3s',

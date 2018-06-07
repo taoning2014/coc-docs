@@ -6,14 +6,16 @@ export const cannon = {
       描述:
         'The Cannon is a single target defense that deals moderate damage. Cannons are both cheap and quick to upgrade at lower levels.',
     },
+    infoTable: {
+      content: [
+        ['大本营等级', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        ['可建造数量上限', 2, 2, 2, 2, 3, 3, 5, 5, 5, 6],
+      ],
+    },
   },
   description:
     'The Cannon is a single target defense that deals moderate damage. Cannons are both cheap and quick to upgrade at lower levels.',
   data: [
-    {
-      大本营等级: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      加农炮可建造数量上限: [2, 2, 2, 2, 3, 3, 5, 5, 5, 6],
-    },
     {
       射程: '9',
       攻击速度: '0.8s',
