@@ -1,7 +1,7 @@
 export const cannon = {
   name: '加农炮',
   profile: {
-    image: { src: '/assets/images/defence/加农炮.png', alt: '加农炮' },
+    image: { src: '/coc-docs/assets/images/defence/加农炮.png', alt: '加农炮' },
     info: {
       描述:
         'The Cannon is a single target defense that deals moderate damage. Cannons are both cheap and quick to upgrade at lower levels.',

@@ -1,7 +1,7 @@
 export const archerQueen = {
   name: '弓箭女王',
   profile: {
-    image: { src: '/assets/images/heros/弓箭女王.png', alt: '弓箭女王' },
+    image: { src: '/coc-docs/assets/images/heros/弓箭女王.png', alt: '弓箭女王' },
     info: {
       技能名称: '皇室披风',
       有效半径: '2.5格',

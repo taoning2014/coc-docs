@@ -1,7 +1,7 @@
 export const healingSpells = {
   name: '疗伤法术',
   profile: {
-    image: { src: '/assets/images/spells/疗伤法术.png', alt: '疗伤法术' },
+    image: { src: '/coc-docs/assets/images/spells/疗伤法术.png', alt: '疗伤法术' },
     info: {
       描述:
         'The Healing Spell is unlocked at Level 2 Spell Factory. It provides a medium ranged radius with yellow shades of glowing color representing the healing effect. Similar effect can be seen while the Healer is healing.',

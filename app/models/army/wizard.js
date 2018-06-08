@@ -1,7 +1,7 @@
 export const wizard = {
   name: '法师',
   profile: {
-    image: { src: '/assets/images/army/法师.png', alt: '法师' },
+    image: { src: '/coc-docs/assets/images/army/法师.png', alt: '法师' },
     info: {
       描述:
         'The Wizard is a magical man that wears a hooded cloak, a leather belt with golden buckle and matching boots.',
@@ -24,42 +24,42 @@ export const wizard = {
       图示: [
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-1-and-2.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-1-and-2.png',
           alt: '法师',
         },
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-1-and-2.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-1-and-2.png',
           alt: '法师',
         },
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-3-and-4.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-3-and-4.png',
           alt: '法师',
         },
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-3-and-4.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-3-and-4.png',
           alt: '法师',
         },
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-5.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-5.png',
           alt: '法师',
         },
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-6.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-6.png',
           alt: '法师',
         },
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-7.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-7.png',
           alt: '法师',
         },
         {
           type: 'img',
-          url: '/assets/images/army/法师/法师-level-8.png',
+          url: '/coc-docs/assets/images/army/法师/法师-level-8.png',
           alt: '法师',
         },
       ],

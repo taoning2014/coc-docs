@@ -1,7 +1,7 @@
 export const hogRider = {
   name: '野猪骑士',
   profile: {
-    image: { src: '/assets/images/army/野猪骑士.png', alt: '野猪骑士' },
+    image: { src: '/coc-docs/assets/images/army/野猪骑士.png', alt: '野猪骑士' },
     info: {
       描述:
         'The Hog Rider is a rugged, dark-skinned man with a mohawk, riding a large hog. He is bare-chested, wearing only a brown leather loincloth, a red belt and a pair of leather sandals. He has two large golden wristbands and a gold earring. His weapon of choice is a large warhammer.',
@@ -24,37 +24,37 @@ export const hogRider = {
       图示: [
         {
           type: 'img',
-          url: '/assets/images/army/野猪骑士/野猪骑士-level-1-and-2.png',
+          url: '/coc-docs/assets/images/army/野猪骑士/野猪骑士-level-1-and-2.png',
           alt: '野猪骑士',
         },
         {
           type: 'img',
-          url: '/assets/images/army/野猪骑士/野猪骑士-level-1-and-2.png',
+          url: '/coc-docs/assets/images/army/野猪骑士/野猪骑士-level-1-and-2.png',
           alt: '野猪骑士',
         },
         {
           type: 'img',
-          url: '/assets/images/army/野猪骑士/野猪骑士-level-3-and-4.png',
+          url: '/coc-docs/assets/images/army/野猪骑士/野猪骑士-level-3-and-4.png',
           alt: '野猪骑士',
         },
         {
           type: 'img',
-          url: '/assets/images/army/野猪骑士/野猪骑士-level-3-and-4.png',
+          url: '/coc-docs/assets/images/army/野猪骑士/野猪骑士-level-3-and-4.png',
           alt: '野猪骑士',
         },
         {
           type: 'img',
-          url: '/assets/images/army/野猪骑士/野猪骑士-level-5.png',
+          url: '/coc-docs/assets/images/army/野猪骑士/野猪骑士-level-5.png',
           alt: '野猪骑士',
         },
         {
           type: 'img',
-          url: '/assets/images/army/野猪骑士/野猪骑士-level-6.png',
+          url: '/coc-docs/assets/images/army/野猪骑士/野猪骑士-level-6.png',
           alt: '野猪骑士',
         },
         {
           type: 'img',
-          url: '/assets/images/army/野猪骑士/野猪骑士-level-7.png',
+          url: '/coc-docs/assets/images/army/野猪骑士/野猪骑士-level-7.png',
           alt: '野猪骑士',
         },
       ],

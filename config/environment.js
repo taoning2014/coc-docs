@@ -5,7 +5,7 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'coc-docs',
     environment,
-    rootURL: '/',
+    rootURL: '/coc-docs',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -14,17 +14,18 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
   };
 
   if (environment === 'development') {
+    ENV.rootURL = '/coc-docs';
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
@@ -45,7 +46,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.rootURL = '/coc-docs';
+    ENV.locationType = 'hash';
   }
 
   return ENV;

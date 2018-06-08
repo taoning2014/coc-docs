@@ -21,7 +21,7 @@
   图示: [
       {
         type: 'img',
-        url: '/assets/images/defence/法师塔/法师塔-level-1.png',
+        url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-1.png',
         alt: '法师塔 level 1',
       },
     ]

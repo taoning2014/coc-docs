@@ -1,7 +1,7 @@
 export const wizardTower = {
   name: '法师塔',
   profile: {
-    image: { src: '/assets/images/defence/法师塔.png', alt: '法师塔' },
+    image: { src: '/coc-docs/assets/images/defence/法师塔.png', alt: '法师塔' },
     info: {
       描述:
         'The Wizard Tower is a spiraling, cone-shaped tower of crystalline rock that has a Wizard on the top of it. It is capable of inflicting powerful splash damage to both Ground and Air Units, though it is limited to a relatively short range.',
@@ -28,52 +28,52 @@ export const wizardTower = {
       图示: [
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-1.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-1.png',
           alt: '法师塔 level 1',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-2.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-2.png',
           alt: '法师塔 level 2',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-3.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-3.png',
           alt: '法师塔 level 3',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-4.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-4.png',
           alt: '法师塔 level 4',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-5.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-5.png',
           alt: '法师塔 level 5',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-6.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-6.png',
           alt: '法师塔 level 6',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-7.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-7.png',
           alt: '法师塔 level 7',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-8.jpg',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-8.jpg',
           alt: '法师塔 level 8',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-9.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-9.png',
           alt: '法师塔 level 9',
         },
         {
           type: 'img',
-          url: '/assets/images/defence/法师塔/法师塔-level-10.png',
+          url: '/coc-docs/assets/images/defence/法师塔/法师塔-level-10.png',
           alt: '师塔- evel- 0',
         },
       ],

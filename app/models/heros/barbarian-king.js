@@ -1,7 +1,7 @@
 export const barbarianKing = {
   name: '野蛮人之王',
   profile: {
-    image: { src: '/assets/images/heros/野蛮人之王.png', alt: '野蛮人之王' },
+    image: { src: '/coc-docs/assets/images/heros/野蛮人之王.png', alt: '野蛮人之王' },
     info: {
       技能名称: '铁拳出击',
       有效时间: '10秒',

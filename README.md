@@ -40,7 +40,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+Currently the app is deployed to [github pages](https://pages.github.com/), follow steps:
+
+1. Commit changes in development branch.
+2. Check out branch gh-pages which is a special branch that github used to deploy static website.
+3. Rebase development branch.
+4. Run `ember build --environment=production`, this will build app in production environment, the build result is under `/dist`.
+5. Run `cp -R dist/* ./`.
+6. Add and commit change: `git commit -a -m 'development 001'`.
+7. Push to github.
 
 ## Further Reading / Useful Links
 
