@@ -34,6 +34,7 @@
     "ember-cli-uglify": "^2.0.0",
     "ember-data": "~2.17.0",
     "ember-export-application-global": "^2.0.0",
+    "ember-is-mobile": "^2.0.5",
     "ember-load-initializers": "^1.0.0",
     "ember-paper": "^1.0.0-beta.7",
     "ember-paper-expansion-panel": "0.0.3",
