@@ -1,37 +1,53 @@
-<div class="container layout-row">
-  <aside class='profile-aside__container flex-none'>
-    <div class='profile-aside__search-container'></div>
-    <div class='profile-aside__list-container'>
-      {{#each model as |types|}}
-        {{#paper-expansion-panel class='profile-aside__paper-expansion-panel' as |panel|}}
-          {{#panel.collapsed}}
-            <div class="md-panel-title">{{types.typeName}}</div>
-            {{paper-icon "keyboard_arrow_down"}}
-          {{/panel.collapsed}}
-          {{#panel.expanded as |expanded|}}
-            {{#expanded.header}}
+{{#paper-sidenav-container class="container layout-row"}}
+  {{#paper-sidenav
+    class="profile-aside__container"
+    name="left"
+    open=leftSideBarOpen
+    onToggle=(action (mut leftSideBarOpen))}}
+    {{#paper-toolbar as |toolbar|}}
+      {{#paper-toolbar-tools}}部落冲突{{/paper-toolbar-tools}}
+    {{/paper-toolbar}}
+    {{#paper-content}}
+      <div class='profile-aside__search-container'></div>
+      <div class='profile-aside__list-container'>
+        {{#each model as |types|}}
+          {{#paper-expansion-panel class='profile-aside__paper-expansion-panel' expanded=shouldExpandPanel as |panel|}}
+            {{#panel.collapsed}}
               <div class="md-panel-title">{{types.typeName}}</div>
-              {{paper-icon "keyboard_arrow_up"}}
-            {{/expanded.header}}
-            {{#expanded.content}}
-              <ul>
-                {{#each types.data as |profile|}}
-                  <li>{{#link-to 'profile.detail' types.type profile.name}} {{profile.name}} {{/link-to}}</li>
-                {{/each}}
-              </ul>
-            {{/expanded.content}}
-          {{/panel.expanded}}
-        {{/paper-expansion-panel}}
-      {{/each}}
-    </div>
-    <div class='profile-aside__button-container'>
-      {{link-to 'BACK TO HOME' 'profile'}}
-    </div>
-  </aside>
+              {{paper-icon "keyboard_arrow_down"}}
+            {{/panel.collapsed}}
+            {{#panel.expanded as |expanded|}}
+              {{#expanded.header}}
+                <div class="md-panel-title">{{types.typeName}}</div>
+                {{paper-icon "keyboard_arrow_up"}}
+              {{/expanded.header}}
+              {{#expanded.content}}
+                <ul>
+                  {{#each types.data as |profile|}}
+                    <li>{{#link-to 'profile.detail' types.type profile.name}} {{profile.name}} {{/link-to}}</li>
+                  {{/each}}
+                </ul>
+              {{/expanded.content}}
+            {{/panel.expanded}}
+          {{/paper-expansion-panel}}
+        {{/each}}
+      </div>
+      <div class='profile-aside__button-container'>
+        {{link-to 'BACK TO HOME' 'profile'}}
+      </div>
+    {{/paper-content}}
+  {{/paper-sidenav}}
 
   <main class="profile-main__container flex">
-    {{outlet}}
+    <div class="profile-main__toggle-button-container layout-row hide-gt-sm">
+      {{#paper-sidenav-toggle name="left" as |toggleAction|}}
+        {{#paper-button onClick=(action "toggle" toggleAction)}}
+          {{paper-icon "toc" size=36}}
+        {{/paper-button}}
+      {{/paper-sidenav-toggle}}
+    </div>
+    <div class="profile-main__toggle-content-container">
+      {{outlet}}
+    </div>
   </main>
-</div>
-
-
+{{/paper-sidenav-container}}

@@ -1,9 +1,28 @@
+@media (max-width: 960px) {
+  .profile-main__toggle-content-container {
+    margin-top: 80px;
+  }
+}
+
 .profile-main__container {
-  margin-left: 330px;
-  width: 100%;
-  padding: 18px 10px;
-  padding-bottom: 0;
   background-color: #f5f5f5;
+}
+
+.profile-main__toggle-button-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background-color: #3f51b5;
+
+  md-icon {
+    margin-left: 18px;
+    color: white;
+  }
+}
+
+.profile-main__toggle-content-container {
+  padding: 18px 10px;
 }
 
 .profile-main__index-container {

@@ -1,7 +1,4 @@
 .profile-aside__container {
-  position: fixed;
-  height: 100%;
-  width: 330px;
   background-color: #616161;
 }
 
@@ -18,4 +15,8 @@
   a {
     color: #fafafa;
   }
+}
+
+.profile-aside__paper-expansion-panel.md-open {
+  margin: 0;
 }
