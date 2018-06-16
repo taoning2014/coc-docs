@@ -1,3 +1,9 @@
+@media (max-width: 960px) {
+  .profile-aside__container {
+    position: fixed;
+  }
+}
+
 .profile-aside__container {
   background-color: #616161;
 }
